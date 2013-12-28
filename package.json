@@ -1,23 +1,24 @@
 {
-    "name": "Rubrica",
-    "version": "0.0.0",
-    "description": "Pracownia edytorska Rubrica",
-    "main": "index.js",
-    "scripts": {},
-    "keywords": [
-        "rubrica",
-        "pracownia",
-        "edytorska",
-        "agata",
-        "czerwinska"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/czerwinb/rubrica.pl.git"
-    },
-    "author": "czerwinb <bczerwinski@bsnetworks.pl>",
-    "license": "MIT",
-    "devDependencies": {
-         "grunt": "~0.4.2"
-    }
+  "name": "Rubrica",
+  "version": "0.0.0",
+  "description": "Pracownia edytorska Rubrica",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "rubrica",
+    "pracownia",
+    "edytorska",
+    "agata",
+    "czerwinska"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/czerwinb/rubrica.pl.git"
+  },
+  "author": "czerwinb <bczerwinski@bsnetworks.pl>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1"
+  }
 }
