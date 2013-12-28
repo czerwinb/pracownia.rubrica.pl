@@ -1,25 +1,28 @@
 {
-    "name": "Rubrica",
-    "version": "0.0.0",
-    "homepage": "http://www.rubrica.pl/",
-    "authors": [
-        "czerwinb <bczerwinski@bsnetworks.pl>"
-    ],
-    "description": "Pracownia edytorska Rubrica",
-    "keywords": [
-        "rubrica",
-        "pracownia",
-        "edytorska",
-        "agata",
-        "czerwinska"
-    ],
-    "license": "MIT",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "Rubrica",
+  "version": "0.0.0",
+  "homepage": "http://www.rubrica.pl/",
+  "authors": [
+    "czerwinb <bczerwinski@bsnetworks.pl>"
+  ],
+  "description": "Pracownia edytorska Rubrica",
+  "keywords": [
+    "rubrica",
+    "pracownia",
+    "edytorska",
+    "agata",
+    "czerwinska"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
 }
