@@ -1,0 +1,11 @@
+body {
+    /*min-height: 2000px;*/
+    padding-top: 80px; /* Fixed for fixed-navbar */
+}
+
+/* Center table and auto-align width to content */
+.table-nonfluid {
+    width: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
