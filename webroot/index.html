@@ -18,6 +18,7 @@
     <!-- build:css styles/main.css -->
     <link href="styles/main.css" rel="stylesheet"/>
     <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"/>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,8 +27,21 @@
     <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#navbar-main">
+
+    <div class="row intro">
+        <!--<div class="col-sm-8 motto">-->
+        <div class="motto">
+            <div class="logotype"><a href="."><img src="images/rubrica-50.png" alt=""></a></div>
+            <!--<div class="logotype"></div>-->
+            <h3>Czytamy.</h3>
+            <h2>Poprawiamy.</h2>
+            <h1>Ulepszamy.</h1>
+        </div>
+        <!--<div class="col-sm-4 logotype"></div>-->
+    </div>
+
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="sticky-nav" class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,7 +53,6 @@
           <a class="navbar-brand" href="."><img src="images/rubrica-50.png"/></a>
         </div>
         <div id="navbar-main" class="navbar-collapse collapse">
-<!--          <ul class="nav navbar-nav">-->
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#offer">Oferta</a></li>
             <li><a href="#about">O pracowni</a></li>
@@ -53,11 +66,12 @@
     </div>
 
     <div class="container">
-        
+
         <!-- Oferta -->
         <section id="offer">
-            <div class="row featurette">
-                <h2 class="featurette-heading">Oferta</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/oferta-1.png"/></p>
+                <h2 class="heading">Oferta</h2>
                 <p class="lead">Pracownia edytorska Rubrica świadczy usługi przede wszystkim z zakresu korekty i redakcji tekstu.</p>
                 <p class="lead">Proponujemy Państwu również redakcję techniczną (formatowanie tekstu w pliku Worda: nadanie stylów akapitowych i znakowych, ujednolicenie wcięć, wyliczeń, wypunktowań, podpisów pod grafikami itd.). Sprawdzamy:</p>
                 <ul class="lead">
@@ -74,12 +88,13 @@
                 <p class="lead">Zapraszamy do skorzystania z oferty wydawnictwa, instytucje, firmy, a także osoby prywatne, którym zależy na profesjonalnym wizerunku oraz nawiązywaniu relacji z klientami i czytelnikami za pośrednictwem tekstów poprawnych i atrakcyjnych.</p>
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <!-- O pracowni -->
         <section id="about">
-            <div class="row featurette">
-                <h2 class="featurette-heading">O pracowni</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/o-firmie-2.png"/></p>
+                <h2 class="heading">O pracowni</h2>
                 <p class="lead">Właścicielka firmy jest absolwentką edytorstwa na Uniwersytecie Jagiellońskim, w pracy z różnego typu tekstami wykorzystuje także wiedzę zdobytą na kursie redaktora prowadzącego (Polskie Towarzystwo Wydawców Książek) oraz kilkuletnie doświadczenie w poprawianiu tekstów informatycznych, prawniczych, popularnonaukowych, finansowych, a także beletrystyki i literatury reportażowej.</p>
                 <p class="lead">Do klientów byłych i obecnych należą:</p>
                 <ul class="lead">
@@ -97,12 +112,13 @@
                 <p class="lead">Intuicja językowa to nie wszystko – aby zagwarantować najwyższą jakość usług, sięgamy po najnowsze wydawnictwa poprawnościowe, publikacje z zakresu edytorstwa i typografii, a także opinie językoznawców.</p>
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <!-- Jak dzialamy -->
         <section id="how-we-work">
-            <div class="row featurette">
-                <h2 class="featurette-heading">Jak działamy</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/jak-pracujemy-1.png"/></p>
+                <h2 class="heading">Jak działamy</h2>
                 <p class="lead">Teksty poprawiamy na wydrukach (wykorzystujemy znormalizowane znaki korektorskie nanoszone na marginesie) lub w wersji elektronicznej w trybie śledzenia zmian (Microsoft Word: .doc, .docx, Open Office: .odt) lub dodawania komentarzy (.pdf). Klient otrzymuje tekst z poprawkami, które sam zatwierdza lub odrzuca.</p>
                 <ol class="lead">
                     <li>Aby zapytać o bezpłatną i niezobowiązującą wycenę, należy skorzystać z formularza kontaktu lub napisać na adres biuro@rubrica.pl (do wyceny będzie nam potrzebny tekst lub jego fragment w formacie .doc, .docx, .odt, .pdf, .ind). Nawet na etapie wyceny gwarantujemy pełną poufność przesyłanych do nas materiałów!</li>
@@ -110,74 +126,78 @@
                     <li>Klient dostarcza całość materiałów: w wersji elektronicznej lub papierowej.</li>
                     <li>Cały czas jesteśmy w kontakcie i odpowiadamy na pytania.</li>
                     <li>Poprawiony tekst odsyłamy w umówionym terminie wraz z rachunkiem (w wersji elektronicznej lub papierowej). Wynagrodzenie za usługę należy opłacić po przyjęciu gotowego tekstu w terminie 14 dni*.</li>
-                </ol>                
+                </ol>
                 <p class="lead">* Jeśli tekst jest duży, Klient zostanie poproszony o wpłacenie 50% ustalonej kwoty, zanim rozpoczniemy pracę.</p>
                 <!--<p class="lead">Do pobrania: Umowa o wykonanie korekty i/lub redakcji tekstu w języku polskim</p>-->
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <!-- Cennik -->
         <section id="price-list">
-            <div class="row featurette">
-                <h2 class="featurette-heading">Cennik</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/cennik-2.png"/></p>
+                <h2 class="heading">Cennik</h2>
                 <p class="lead"></p>
                 <p class="lead">Podane ceny są orientacyjne. Dokładny koszt jest ustalany w zależności od charakteru publikacji, skomplikowania tekstu i jego objętości, a także terminu realizacji zlecenia (po otrzymaniu fragmentu tekstu do oceny). Prosimy o zapoznanie się ze słownikiem terminów przed złożeniem zlecenia – jeżeli zależy Państwu na kompleksowym opracowaniu tekstu (poprawność, zagadnienia leksykalno-stylistyczne, sprawdzenie typografii, ujednolicenie terminologii itd.) , a nie tylko usunięciu błędów językowych, zalecamy skorzystanie z usługi redakcji.</p>
                 <p class="lead">Na życzenie Klienta wykonamy darmową próbkę redakcji/korekty (do 5 stron znormalizowanych, tj. 9000 znaków, przy tekstach liczących ponad 2 arkusze wydawnicze).</p>
-                <table class="table table-striped table-nonfluid">
-                    <thead>
-                        <tr>
-                            <td></td>
-                            <td><strong>Strona znormalizowana</strong><br>(1800 znaków ze spacjami ~ A4)</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Redakcja</strong></td>
-                            <td>od 5,5 zł</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Korekta na wydruku</strong></td>
-                            <td>od 4 zł</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Korekta elektroniczna</strong><br>(.doc, .docx, .odt)</td>
-                            <td>od 4 zł</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Korekta w pliku PDF</strong></td>
-                            <td>od 5 zł</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Redakcja techniczna</strong></td>
-                            <td>do uzgodnienia</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Audyt stron internetowych</strong></td>
-                            <td>od 10 zł za podstronę</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Usługa ekspresowa</strong></td>
-                            <td>+50%</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped table-nonfluid">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td><strong>Strona znormalizowana</strong><br>(1800 znaków ze spacjami ~ A4)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Redakcja</strong></td>
+                                <td>od 5,5 zł</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korekta na wydruku</strong></td>
+                                <td>od 4 zł</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korekta elektroniczna</strong><br>(.doc, .docx, .odt)</td>
+                                <td>od 4 zł</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korekta w pliku PDF</strong></td>
+                                <td>od 5 zł</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Redakcja techniczna</strong></td>
+                                <td>do uzgodnienia</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Audyt stron internetowych</strong></td>
+                                <td>od 10 zł za podstronę</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usługa ekspresowa</strong></td>
+                                <td>+50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p class="lead">Cennik nie stanowi oferty handlowej w rozumieniu art. 66 § 1 Kodeksu cywilnego.
-    Firma korzysta ze zwolnienia z VAT, dlatego wystawiamy tylko rachunki.</p>
+                    Firma korzysta ze zwolnienia z VAT, dlatego wystawiamy tylko rachunki.</p>
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <!-- Slownik terminow -->
         <section id="dictionary">
-            <div class="row featurette">
-                <h2 class="featurette-heading">Słownik terminów</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/slownik-3.png"/></p>
+                <h2 class="heading">Słownik terminów</h2>
                 <p class="lead">Redakcja</p>
                 <p class="lead">Opracowanie tekstu pod względem leksykalno-stylistycznym i typograficznym (układ tekstu, wyróżnienia) oraz sprawdzenie spójności materiału i weryfikacja jego logiczności, obejmuje między innymi sprawdzenie nazwisk czy pojęć, ujednolicenie skrótów, symboli, nazewnictwa oraz opisów bibliograficznych, dopuszcza ingerencję w znaczenie. Nie jest równoznaczna z korektą merytoryczną, którą powinien wykonać specjalista w danej dziedzinie.</p>
                 <p class="lead">Korekta językowa</p>
                 <p class="lead">Sprawdzenie poprawności językowej tekstu, czyli jego zgodności z zasadami polskiej gramatyki, ortografii i interpunkcji, wyeliminowanie literówek.</p>
                 <p class="lead">Znaki korektorskie</p>
-                <p class="lead">Umowne znaki stosowane przez korektora do oznaczania błędów na wydrukach, umieszczane w miejscu wystąpienia błędu i powtarzane na prawym marginesie wraz z poprawną wersją.<img src="images/znaki-korektorskie.png" width="76%"/></p>
+                <p class="lead">Umowne znaki stosowane przez korektora do oznaczania błędów na wydrukach, umieszczane w miejscu wystąpienia błędu i powtarzane na prawym marginesie wraz z poprawną wersją.<img src="images/znaki-korektorskie.png" width="76%" class="img-responsive"/></p>
                 <p class="lead">Korekta techniczna</p>
                 <p class="lead">Zadbanie o wygląd estetyczny publikacji (formatowanie, dobór kroju, układ elementów tekstu – ostylowanie dokumentu Worda), aby była ona bardziej czytelna.</p>
                 <p class="lead">Ostylowanie</p>
@@ -188,30 +208,32 @@
                 <p class="lead">Kolejna jednostka miary objętości tekstu wynosząca 1800 znaków ze spacjami. Liczbę znaków sprawdzamy w edytorze tekstu (np. Word), korzystając ze Statystyki wyrazów (karta Recenzja / Statystyka wyrazów).</p>
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <!-- Kontakt -->
         <section id="contact">
-            <div class="row featurette">
-                <h2 class="featurette-heading">Kontakt</h2>
+            <div class="row">
+                <p class="img-section text-center"><img src="images/red/kontakt-4.png"/></p>
+                <h2 class="heading">Kontakt</h2>
                 <p class="lead">Zapraszamy do kontaktu za pośrednictwem poczty elektronicznej lub telefonicznie.</p>
                 <p class="lead text-center">E-mail: <a href="mailto:biuro@rubrica.pl">biuro@rubrica.pl</a></p>
                 <p class="lead text-center">Telefon: <a href="tel:48601081427">+48 601 081 427</a></p>
             </div>
         </section>
-        <hr class="featurette-divider">
-        
+        <hr class="section-divider">
+
         <footer>
             <p class="pull-right"><a href="#">Powrót do góry</a></p>
             <p class="text-muted">&copy; 2013 Pracownia edytorska Rubrica</p>
         </footer>
-        
-    </div><!--container-->
-    
+
+    </div>
     <!-- build:js scripts/vendor.js -->
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>

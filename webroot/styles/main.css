@@ -1,11 +1,176 @@
-body {
-    /*min-height: 2000px;*/
-    padding-top: 80px; /* Fixed for fixed-navbar */
+/*
+    Intro
+    ==============================================
+*/
+.intro {
+    width: 100%;
+    margin: 0;
+    background: rgb(207, 0, 0) url("../images/intro-bg-0.svg");
+    border-bottom: 1px solid #fff;
+    color: #fff;
 }
 
+.intro > .motto {
+    /*TODO Make this device sensitive using @media?*/
+    margin: 40px 100px 40px auto;
+}
+
+.motto > h1, .motto > h2, .motto > h3 {
+    margin: 10px 280px 10px 0;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    text-align: right;
+}
+
+.motto > h1 {
+    font-size: 3em;
+}
+
+.motto > h2 {
+    font-size: 2.5em;
+}
+
+.motto > h3 {
+    font-size: 2em;
+}
+
+.intro > .motto > .logotype:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.intro > .motto > .logotype {
+    float: right;
+    height: 170px;
+    width: 170px;
+    margin-top: -20px;
+    background-image: url('../images/logotype-bg.svg');
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+
+
+
+/*
+    Sections
+    ==============================================
+*/
+.heading {
+    padding-bottom: 12px;
+    margin-bottom: 26px;
+    /*border-bottom: solid 1px rgb(207, 0, 0);*/
+    color: rgb(207, 0, 0);
+    font-weight: 100;
+    font-family: 'Open Sans';
+    /*text-align: center;*/
+}
+
+.img-section {
+    margin: 35px 0;
+}
+
+.section-divider {
+    margin: 80px 0;
+    border-color: rgb(207, 0 , 0);
+}
+
+
+
+/*
+    Navigation bar
+    ==============================================
+*/
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    border-top: solid 2px rgb(207, 0, 0);
+    border-bottom: 0;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Align to Rubrica logotype */
+.navbar-brand {
+    padding: 15px 2px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgb(207, 0, 0);
+}
+
+/* Form red rectangles over active navigation item */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(207, 0, 0);
+    color: #ffffff;
+}
+
+
+
+/*
+    Tables
+    ==============================================
+*/
 /* Center table and auto-align width to content */
 .table-nonfluid {
     width: auto;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+
+
+/*
+    Lists
+    ==============================================
+*/
+.row ul > li {
+    list-style: none;
+}
+
+/* Coloured bullet points */
+.row ul > li:before {
+    content: '';
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    position: relative;
+    top: -4px;
+    margin-right: 12px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background-color: rgb(207, 0, 0);
+    /*background-clip: padding-box;*/
+    /*-moz-background-clip: padding;*/
+    /*-webkit-background-clip: padding-box;*/
+}
+
+/* Coloured numbered list */
+.row ol {
+    list-style: none;
+    counter-reset: i 0;
+    margin-left: 1em;
+    text-indent: -1.4em;
+}
+
+.row ol > li:before {
+    padding-right: 0.5em;
+    content: counter(i) '.';
+    counter-increment: i;
+    color: rgb(207, 0, 0);
 }

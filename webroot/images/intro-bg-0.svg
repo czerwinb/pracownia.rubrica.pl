@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='132' height='72' viewBox='0 0 26.400000000000002 14.399999999999999'>
+	<defs>
+		<path id='s' fill='#f56262' d='M0,0l2 1l-2,1z'/>
+	</defs>
+	<g id='b'>
+	<use x='-2' y='-1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='0' y='0.2' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-2' y='1.4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />
+	<use x='0' y='2.6' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-2' y='3.8' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.544' xlink:href='#s' />
+	<use x='0' y='5' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-2' y='6.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='2.2' y='-1' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-4.2' y='0.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.544' xlink:href='#s' />
+	<use x='2.2' y='1.4' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-4.2' y='2.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='2.2' y='3.8' fill-opacity='0.136' xlink:href='#s' />
+	<use x='-4.2' y='5' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='2.2' y='6.2' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-6.4' y='-1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='4.4' y='0.2' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-6.4' y='1.4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />
+	<use x='4.4' y='2.6' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-6.4' y='3.8' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.136' xlink:href='#s' />	
+	<use x='4.4' y='5' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-6.4' y='6.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='6.6000000000000005' y='-1' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-8.600000000000001' y='0.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='6.6000000000000005' y='1.4' fill-opacity='0.136' xlink:href='#s' />
+	<use x='-8.600000000000001' y='2.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />
+	<use x='6.6000000000000005' y='3.8' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-8.600000000000001' y='5' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.136' xlink:href='#s' />
+	<use x='6.6000000000000005' y='6.2' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-10.8' y='-1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />	
+	<use x='8.8' y='0.2' fill-opacity='0.544' xlink:href='#s' />
+	<use x='-10.8' y='1.4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.136' xlink:href='#s' />
+	<use x='8.8' y='2.6' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-10.8' y='3.8' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />
+	<use x='8.8' y='5' fill-opacity='0.136' xlink:href='#s' />
+	<use x='-10.8' y='6.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.408' xlink:href='#s' />
+	<use x='11' y='-1' fill-opacity='0.272' xlink:href='#s' />
+	<use x='-13.000000000000002' y='0.2' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />	
+	<use x='11' y='1.4' fill-opacity='0.544' xlink:href='#s' />
+	<use x='-13.000000000000002' y='2.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />	
+	<use x='11' y='3.8' fill-opacity='0.408' xlink:href='#s' />
+	<use x='-13.000000000000002' y='5' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.272' xlink:href='#s' />
+	<use x='11' y='6.2' fill-opacity='0.272' xlink:href='#s' />
+	</g>
+	<use x='-13.000000000000002' y='7.199999999999999' transform='matrix(-1 0 0 1 0 0)' xlink:href='#b' />
+	<use x='-26.200000000000003' y='-4.8' transform='matrix(-1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='13.200000000000001' y='-9.6' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='13.200000000000001' y='-16.8' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+</svg>
