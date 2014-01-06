@@ -12,43 +12,32 @@
 
 .intro > .motto {
     /*TODO Make this device sensitive using @media?*/
-    margin: 40px 100px 40px auto;
+    margin: 60px auto;
 }
 
-.motto > h1, .motto > h2, .motto > h3 {
-    margin: 10px 280px 10px 0;
+.intro > .motto > h1 {
     font-weight: 100;
-    letter-spacing: 0.05em;
-    text-align: right;
-}
-
-.motto > h1 {
     font-size: 3em;
+    letter-spacing: 0.05em;
+    text-align: center;
 }
 
-.motto > h2 {
-    font-size: 2.5em;
-}
-
-.motto > h3 {
-    font-size: 2em;
-}
-
-.intro > .motto > .logotype:before {
+/* Vertical align to middle of the logotype */
+.intro > .motto .logotype:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
 
-.intro > .motto > .logotype {
-    float: right;
-    height: 170px;
-    width: 170px;
-    margin-top: -20px;
-    background-image: url('../images/logotype-bg.svg');
+.intro > .motto .logotype {
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    margin-left: 50px;
+    background: transparent url('../images/logotype-bg.svg') no-repeat;
     text-align: center;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
 }
 
 
@@ -63,7 +52,7 @@
     /*border-bottom: solid 1px rgb(207, 0, 0);*/
     color: rgb(207, 0, 0);
     font-weight: 100;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     /*text-align: center;*/
 }
 
