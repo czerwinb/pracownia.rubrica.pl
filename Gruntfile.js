@@ -77,7 +77,8 @@ module.exports = function (grunt) {
                         cwd: '<%= settings.dirs.webroot %>',
                         src: [
                             '404.html',
-                            'robots.txt'
+                            'robots.txt',
+                            'favicon.ico'
                         ],
                         dest: '<%= settings.dirs.dist %>'
                     }
