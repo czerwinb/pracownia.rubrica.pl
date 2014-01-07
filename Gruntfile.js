@@ -8,7 +8,8 @@ module.exports = function (grunt) {
         settings: {
             dirs: {
                 webroot: 'webroot',
-                dist: 'dist'
+                dist: 'dist',
+                temp: '.tmp'
             },
             browser: 'Google Chrome' // Browser app to be opened
         },
@@ -19,6 +20,7 @@ module.exports = function (grunt) {
                 '<%= settings.dirs.webroot %>/**/dist/js/*',
                 '<%= settings.dirs.webroot %>/**/dist/css/*'
             ],
+            temp: ['<%= settings.dirs.temp %>'],
             dist: [
                 '<%= settings.dirs.dist %>/*',
                 '!<%= settings.dirs.dist %>/.git*'
@@ -49,13 +51,25 @@ module.exports = function (grunt) {
         // Copy remaining files
         copy: {
             dist: {
-                expand: true,
-                cwd: '<%= settings.dirs.webroot %>',
-                dest: '<%= settings.dirs.dist %>',
-                dot: true,
-                src: [
-                    '{,*/}*.html',
-                    '{,*/}*.png'
+                files: [
+                    // Common
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= settings.dirs.webroot %>',
+                        src: [
+                            '{,*/}*.html',
+                            'images/{,*/}*.png',
+                            'images/{,*/}*.svg'],
+                        dest: '<%= settings.dirs.dist %>'
+                    },
+                    // Bootstrap's fonts
+                    {
+                        expand: true,
+                        cwd: '<%= settings.dirs.webroot %>/bower_components/bootstrap/dist/',
+                        src: 'fonts/*.*',
+                        dest: '<%= settings.dirs.dist %>'
+                    }
                 ]
             }
         },
@@ -130,6 +144,19 @@ module.exports = function (grunt) {
                     '<%= settings.dirs.webroot %>/{,*/}*.html'
                 ]
             }
+        },
+        
+        // Deployment
+        'ftp-deploy': {
+            prod: {
+                auth: {
+                    host: 'ftp.rubrica.pl',
+                    port: 21,
+                    authKey: 'ftp.rubrica.pl'
+                },
+                src: '<%= settings.dirs.dist %>',
+                dest: '/public_html/'
+            }
         }
     });
     
@@ -154,4 +181,6 @@ module.exports = function (grunt) {
         'cssmin',
         'usemin'
     ]);
+    
+    grunt.registerTask('deploy', ['ftp-deploy']);
 };
