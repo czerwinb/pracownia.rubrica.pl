@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 files: [
-                    // Common
+                    // Sources
                     {
                         expand: true,
                         dot: true,
@@ -68,6 +68,17 @@ module.exports = function (grunt) {
                         expand: true,
                         cwd: '<%= settings.dirs.webroot %>/bower_components/bootstrap/dist/',
                         src: 'fonts/*.*',
+                        dest: '<%= settings.dirs.dist %>'
+                    },
+                    // Common
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= settings.dirs.webroot %>',
+                        src: [
+                            '404.html',
+                            'robots.txt'
+                        ],
                         dest: '<%= settings.dirs.dist %>'
                     }
                 ]
