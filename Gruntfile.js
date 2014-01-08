@@ -11,7 +11,11 @@ module.exports = function (grunt) {
                 dist: 'dist',
                 temp: '.tmp'
             },
-            browser: 'Google Chrome' // Browser app to be opened
+            browser: 'Google Chrome', // Browser app to be opened
+            connect: {
+                port: 9000,
+                hostname: '*'
+            }
         },
 
         // Local cleanup task
@@ -112,9 +116,9 @@ module.exports = function (grunt) {
         // Grunt server
         connect: {
             options: {
-                port: 9000,
+                port: '<%= settings.connect.port %>',
                 livereload: 35729,
-                hostname: 'localhost'
+                hostname: '<%= settings.connect.hostname %>'
             },
             livereload: {
                 options: {
@@ -154,7 +158,8 @@ module.exports = function (grunt) {
             sources: {
                 files: [
                     '<%= settings.dirs.webroot %>/{,*/}*.html'
-                ]
+                ],
+                tasks: ['usemin']
             }
         },
         
