@@ -1,6 +1,5 @@
-'use strict';
-
 module.exports = function (grunt) {
+    'use strict';
     
     grunt.initConfig({
         
@@ -85,6 +84,16 @@ module.exports = function (grunt) {
                             'favicon.ico'
                         ],
                         dest: '<%= settings.dirs.dist %>'
+                    },
+                    // Content
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= settings.dirs.webroot %>/content',
+                        src: [
+                            '{,*/}*.pdf'
+                        ],
+                        dest: '<%= settings.dirs.dist %>/content'
                     }
                 ]
             }
