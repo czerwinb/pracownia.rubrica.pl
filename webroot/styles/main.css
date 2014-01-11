@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', 'Exo 2', Helvetica, Arial, sans-serif !important;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     font-weight: 300 !important;
 }
 
@@ -24,14 +24,14 @@ h1, h2, h3, h4, h5, h6,
 
 .intro > .motto {
     /*TODO Make this device sensitive using @media so it splits properly when window is resized?*/
-    margin: 60px auto;
+    margin: 50px auto;
 }
 
 .intro > .motto > h1 {
     font-family: 'Helvetica Neue', 'Open Sans Condensed', Helvetica, sans-serif !important;
     font-weight: 100;
     font-size: 3em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6,
 
 .intro > .motto .logotype {
     display: inline-block;
-    height: 180px;
-    width: 180px;
+    height: 190px;
+    width: 190px;
     margin-left: 50px;
     background: transparent url('../images/logotype-bg.svg') no-repeat;
     text-align: center;
