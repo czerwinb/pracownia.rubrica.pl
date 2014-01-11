@@ -221,3 +221,11 @@ footer {
     counter-increment: i;
     color: rgb(207, 0, 0);
 }
+
+/*
+    Lists
+    ==============================================
+*/
+a, a:hover {
+    color: rgb(207, 0, 0);
+}
