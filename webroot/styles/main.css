@@ -211,7 +211,7 @@ footer {
     list-style: none;
     counter-reset: i 0;
     margin-left: 1em;
-    text-indent: -1.4em;
+    text-indent: -1.2em;
 }
 
 /* Imitate default-bullet's margin */

@@ -37,12 +37,3 @@ $(document).ready(function() {
         event.preventDefault();
     });
 });
-
-/*var str = $('div.motto h1');
-var text = str.text();
-str.text('');
-
-var spans = '<span>' + text.split(/\s+/).join(' </span><span>') + '</span>';
-$(spans).hide().appendTo('div.motto h1').each(function(i) {
-    $(this).delay(800 * i).fadeIn();
-});*/
