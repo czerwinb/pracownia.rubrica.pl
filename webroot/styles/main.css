@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6,
 .intro {
     width: 100%;
     margin: 0;
-    background: rgb(207, 0, 0) url('../images/intro-bg-0.svg');
+    background: rgb(207, 0, 0) url('../images/intro-bg-0.svg') fixed;
     border-bottom: 2px solid #fff;
     color: #fff;
 }
